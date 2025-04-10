@@ -133,6 +133,20 @@ Setup & Deployment
     *   Build dashboards using pre-aggregated metrics.
         
 
+### Security Features and Access Control
+
+Security is a critical aspect of any data warehouse, especially when dealing with sensitive business and customer data. In this project, we've implemented robust security features to ensure that only authorized users can access specific datasets and perform certain actions.
+
+**Key Elements:**
+
+- **Roles and Permissions:**
+    - We have created distinct roles for different user groups such as **Data Analysts**, **Data Engineers**, and **Business Users**. These roles have specific permissions that govern what data they can access and what operations they can perform.
+    - **Data Engineers** are granted access to the raw data and are responsible for managing the transformation pipeline, whereas **Business Users** only have access to the Gold and Analytics layers for reporting and analysis.
+    
+- **Access Control:**
+    - Through role-based access control (RBAC), users can only query or modify data within their scope of responsibility, minimizing the risk of unauthorized data access or accidental changes.
+    - Access is granted via secure views, where business-friendly data is made available without exposing raw data directly to users.
+
 Future Enhancements
 -------------------
 
