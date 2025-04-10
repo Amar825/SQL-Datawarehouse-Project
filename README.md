@@ -98,7 +98,7 @@ The data warehouse supports various use cases:
 *   Example Query: Monthly Sales Report
     
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   SELECT FORMAT(order_date, 'yyyy-MM') AS month, SUM(sales_amount) AS total_sales  FROM gold.fact_sales  GROUP BY FORMAT(order_date, 'yyyy-MM')  ORDER BY month;   `
+ SELECT FORMAT(order_date, 'yyyy-MM') AS month, SUM(sales_amount) AS total_sales  FROM gold.fact_sales  GROUP BY FORMAT(order_date, 'yyyy-MM')  ORDER BY month;   `
 
 ### **2\. Machine Learning & Advanced Analytics**
 
@@ -109,7 +109,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 *   Example Query:
     
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   SELECT customer_id, lifetime_spend, total_orders, customer_segment  FROM analytics.customer_lifetime_value  WHERE customer_segment = 'High-Value Active';   `
+ SELECT customer_id, lifetime_spend, total_orders, customer_segment  FROM analytics.customer_lifetime_value  WHERE customer_segment = 'High-Value Active';   `
 
 Setup & Deployment
 ------------------
